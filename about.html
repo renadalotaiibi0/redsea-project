@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن وجهات البحر الأحمر</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.05) 60%);
+        }
+        .hero-text {
+            position: absolute;
+            bottom: 40px;
+            right: 60px;
+            color: white;
+            text-align: right;
+        }
+        .hero-text h1 {
+            font-size: 42px;
+            margin: 0 0 10px 0;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        .hero-text p {
+            font-size: 16px;
+            opacity: 0.9;
+            margin: 0;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+        }
+        .about-content {
+            max-width: 900px;
+            margin: 50px auto 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            line-height: 1.8;
+        }
+        .about-content h2 {
+            color: #005f73;
+            border-bottom: 2px solid #94d2bd;
+            padding-bottom: 10px;
+        }
+        .stats-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .stat-item h4 {
+            font-size: 24px;
+            color: #ee9b00;
+            margin-bottom: 5px;
+        }
+        .stat-item p {
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <img src="images/logo.png" alt="Red Sea Logo">
+            <a href="index.php">الرئيسية</a>
+            <a href="all_items.php">الوجهات السياحية</a>
+            <a href="about.html">من نحن</a>
+            <a href="admin_login.php">لوحة التحكم</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <!--image source: https://www.propertyfinder.sa/blog/مشروع-البحر-الأحمر/-->
+        <img src="images/explor1.png" alt="من نحن">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1>رؤية البحر الأحمر</h1>
+            <p>نحو سياحة فاخرة ومستدامة على ساحل البحر الأحمر</p>
+        </div>
+    </div>
+
+    <main class="about-content">
+        <h2>عن المشروع</h2>
+        <p>
+            يُعد مشروع البحر الأحمر أحد أكثر المشاريع السياحية طموحاً في العالم، حيث يمتد على مساحة تزيد عن 28 ألف كيلومتر مربع من الأراضي البكر على الساحل الغربي للمملكة العربية السعودية. يهدف المشروع إلى تقديم تجربة سياحية فاخرة ومتجددة، تدمج بين الطبيعة الخلابة والتصاميم العصرية المستدامة.
+        </p>
+        <h2>أهدافنا السياحية</h2>
+        <p>
+            نسعى من خلال هذه المنصة إلى تسليط الضوء على الوجهات الاستثنائية مثل جزر "سندالة" و"أمالا"، وتسهيل وصول الزوار إلى أرقى الخدمات الفندقية والأنشطة البحرية التي تضع المملكة على خارطة السياحة العالمية كوجهة رائدة في تقديم الرفاهية وحماية البيئة في آن واحد.
+        </p>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h4>+90</h4>
+                <p>جزيرة بكر</p>
+            </div>
+            <div class="stat-item">
+                <h4>50</h4>
+                <p>فندق فاخر</p>
+            </div>
+            <div class="stat-item">
+                <h4>100%</h4>
+                <p>طاقة متجددة</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
